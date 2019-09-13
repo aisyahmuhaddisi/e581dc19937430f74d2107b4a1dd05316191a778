@@ -1,9 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import NavBar from "./components/navbar";
-import FoodList from "./components/FoodList";
+import Address from "./components/Address";
 import FoodCard from './components/FoodCard.js';
-// import FoodList from './components/FoodList'
-// import RecipeDetails from './components/RecipeDetails'
+import Tabs from './components/Tabs';
 
 
 function App() {
@@ -18,8 +17,10 @@ function App() {
     fetchRecipe()
   })
   return (
-    <div>
+    <div className="App">
       <NavBar/>
+      <Address/>
+      <Tabs/>
       {recipes.map(recipe => (
         <FoodCard
         title={recipe.title}
