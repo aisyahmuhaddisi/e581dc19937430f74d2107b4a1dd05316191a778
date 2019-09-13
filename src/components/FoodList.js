@@ -1,9 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
-export default function FoodList(){
-    return (
-        <div>
-            
-        </div>
-    )
+
+export default function FoodList() {
+
 }
